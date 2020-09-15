@@ -90,7 +90,7 @@ python ws_client.py
 
 * setup and run the Python code as described above on your computer
 * What is the greeting string issued by the server to the client upon first connecting?
-
+// ECE Senior Capstone IoT simulator
 ### Task 1: data flow
 
 Python standard library includes
