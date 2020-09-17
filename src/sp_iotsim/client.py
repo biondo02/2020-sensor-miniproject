@@ -23,6 +23,7 @@ async def main(port: int, addr: str, max_packets: int, log_file: Path):
     if log_file:
         log_file = Path(log_file).expanduser()
         file = log_file.open(mode='a')
+        # mode so the data is appended to the file
     else: 
         log_file = None
 
@@ -39,7 +40,6 @@ async def main(port: int, addr: str, max_packets: int, log_file: Path):
             data = await websocket.recv()
             if i % 5 == 0:
                 pass
-                # print(f"{i} total messages received")
             print(data)
             if log_file != None:
                 file.write(data)

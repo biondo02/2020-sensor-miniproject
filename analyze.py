@@ -70,7 +70,7 @@ if __name__ == "__main__":
             variance = statistics.variance (list)
             if datatype != "co2":
                 print("The median " + str(datatype) + " of room " + str(room)+ " is "+ str(median))
-                print("The variance of the " + str(datatype) + " of room " + str(room)+ " is "+ str(median))
+                print("The variance of the " + str(datatype) + " of room " + str(room)+ " is "+ str(variance))
 
     print("\n")
 
