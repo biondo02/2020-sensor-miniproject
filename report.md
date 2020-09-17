@@ -2,6 +2,7 @@ Anthony Biondo
 August Bernhard	
 
 My teammate and I have not used Python prior to this assignment. Therefore, some python conventions that may be immediately obvious to those who have learned the language formally may not be followed. However, this also means we got more out of this project than our peers who may already be practiced in Python. First, we analysed the code provided to us. A few things stood out to us, for instance Add.argument and Asyncio, so we began our endeavor by researching the keywords we were not familiar with. Python proved to be a very approachable language, and once we began to feel  comfortable with the general syntax the coding itself became much easier. This familiarity allowed us to implement code of our own, such as the pandas function which proved critical to analysing the data. 
+
 The zeroth task set out for us was very manageable, as we both have had experience with github before. Unfortunately, one of our import functions was not working correctly and therefore it took awhile to truly get the first code working. This was solved by writing the import function into the code directly rather than use it in a path. The first task could be accomplished with only a few lines of code in client.py, which would append the file we created by adding any information as it came in. In the second task, we relied on pandas to organize the data into probability density functions. With these probability density functions graphed, we can gauge easily the main characteristics of the data. With the data organized, we can also use functions on it to find its median, variance, mean, etc. For task 3, we set a standard deviation from the mean of the data as a bound, and compared each point's absolute difference to this bound to see which were outliers. If it was an outlier, python would print its timestamp, and add it to an array which would later be dropped. Once the faulty data points were dropped, it was trivial to run similar functions on them as in task 2 to find the new characteristics of the outlier-less data. 
 
 		
@@ -19,14 +20,11 @@ In order to accomplish task 1 we added additional code to the client.py and call
 
 Task 2
 
-
-Lab1 chart
-Median Temperature 		21.003
-Variance Temperature 	2.197
-Occupancy Median 		5.000
-occupancy Variance 		4.857
-Time Interval Mean 		3.289
-Time Interval Variance 	12.791
+| Lab 1 chart | Temperature | Occupancy | Time Interval | 
+|-------------|-------------|-----------|---------------|
+| Median      | 21.003      | 5.000     |               |   
+| Variance    | 2.197       | 4.857     | 12.791        |   
+| Mean        |             |           | 3.289         |   
 
 ![alt text](images/Task2graph.png)
 
@@ -47,14 +45,14 @@ Time Interval Variance 	12.791
 
 Task 3
 
-
-
-				
-				Lab1			Class1 		Office
 1.
-% of Anomalies  		3.802			3.861		.704
-Mean Temp			20.998 			27.018		23.029
-Variance of Temp 		0.138			0.737		3.795
+
+|                  | Lab1   | Class1 | Office |  
+|------------------|--------|--------|--------|
+| % of Anomalies   | 3.802  | 3.861  | .704   | 
+| Mean Temp        | 20.998 | 27.018 | 23.029 |   |
+| Variance of Temp | 0.138  | .737   | 3.795  |   
+
 
 2. Does a persistent change in temperature always indicate a failed sensor?
 
